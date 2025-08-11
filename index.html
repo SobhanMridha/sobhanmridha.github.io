@@ -6,18 +6,18 @@
     <link href="./src/output.css" rel="stylesheet" />
     <title>Home</title>
   </head>
-  
+
   <body
     class="bg-global-bg text-global-text mx-auto flex min-h-screen max-w-3xl flex-col px-4 pt-16 font-mono text-sm font-normal antialiased sm:px-8"
   >
-    <header class="relative mb-28 flex justify-between items-center sm:pl-16">
+    <header class="relative mb-20 flex justify-between items-center">
       <div class="flex gap-2">
         <a
           class="inline-flex items-center grayscale hover:filter-none sm:relative sm:inline-block"
           href="/"
         >
           <img
-            src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDY2aXN4bWhqenF5Zng5d25mazYxeTJyaTU3d2Y0bHE1M202Y3VpayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/11EcsZWIcV4q2I/giphy.gif"
+            src="./static/dacing-vegeta.gif"
             class="mr-3 h-10 w-10 sm:mr-0 sm:h-20 sm:w-20"
           />
         </a>
@@ -111,7 +111,88 @@
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <div
+        class="flex flex-col-reverse md:flex-row md:justify-between md:items-start gap-8"
+      >
+        <section class="flex-1 space-y-6">
+          <h1 class="text-5xl font-bold text-[#c9c9c9]">Hello</h1>
+          <p class="text-gray-400 max-w-md leading-relaxed font-mono text-base">
+            <span class="text-3xl">I’m Sobhan Mridha,</span><br> a passionate frontend developer and competitive
+            programmer. I love building sleek, responsive web applications and
+            solving challenging algorithm problems. When I’m not coding, I enjoy
+            exploring new technologies and contributing to open-source projects.
+          </p>
+          <button
+            class="inline-flex items-center justify-center whitespace-nowrap font-mono font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2abc89] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1D1F20] disabled:pointer-events-none disabled:opacity-50 bg-[#212326] border border-[#2abc89] text-[#c9c9c9] hover:bg-[#2abc89] hover:text-[#1D1F20] h-10 px-6 py-3 uppercase tracking-wider transition-all duration-300 cursor-pointer"
+          >
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 256 256"
+              class="h-4 w-4 mr-2"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M210.78,39.25l-130.25-23A16,16,0,0,0,62,29.23l-29.75,169a16,16,0,0,0,13,18.53l130.25,23a16,16,0,0,0,18.54-13l29.75-169A16,16,0,0,0,210.78,39.25ZM135.5,131.56a8,8,0,0,1-7.87,6.61,8.27,8.27,0,0,1-1.4-.12l-41.5-7.33A8,8,0,0,1,87.52,115L129,122.29A8,8,0,0,1,135.5,131.56Zm47-24.18a8,8,0,0,1-7.86,6.61,7.55,7.55,0,0,1-1.41-.13l-83-14.65a8,8,0,0,1,2.79-15.76l83,14.66A8,8,0,0,1,182.53,107.38Zm5.55-31.52a8,8,0,0,1-7.87,6.61,8.36,8.36,0,0,1-1.4-.12l-83-14.66a8,8,0,1,1,2.78-15.75l83,14.65A8,8,0,0,1,188.08,75.86Z"
+              ></path>
+            </svg>
+            My Resume
+          </button>
+        </section>
+
+        <section
+          class="max-w-xs bg-[#212326] rounded-lg shadow-lg p-6 text-gray-300 flex-shrink-0 mx-auto sm:mx-0"
+        >
+          <!-- my photo -->
+          <div class="mb-4">
+            <img
+              src="./static/profile.png"
+              class="w-full h-72 rounded-md border-2 border-[#2abc89] object-cover"
+              alt="Profile Photo"
+            />
+          </div>
+
+          <!-- find me -->
+          <div>
+            <h3 class="text-lg font-semibold mb-3">Find Me On</h3>
+            <div class="flex justify-start space-x-4">
+              <a href="#">
+                <img
+                  src="./social logo/github.png"
+                  class="w-10 h-10 grayscale hover:filter-none"
+                  alt="GitHub"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./social logo/likedin.png"
+                  class="w-10 h-10 grayscale hover:filter-none"
+                  alt="LinkedIn"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./social logo/facebook.png"
+                  class="w-10 h-10 grayscale hover:filter-none"
+                  alt="Facebook"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./social logo/discord.png"
+                  class="w-10 h-10 grayscale hover:filter-none"
+                  alt="Discord"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
 
     <footer
       class="mt-auto flex w-full flex-col items-center justify-center gap-y-2 pt-20 pb-4 text-center align-top font-semibold sm:flex-row sm:justify-between sm:text-xs text-gray-400"
