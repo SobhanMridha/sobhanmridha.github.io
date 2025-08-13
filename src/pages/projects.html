@@ -3,14 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../../static/favicon.ico"
+      type="image/x-icon"
+    />
     <link href="../output.css" rel="stylesheet" />
     <title>Projects</title>
   </head>
-  
+
   <body
     class="bg-global-bg text-global-text mx-auto flex min-h-screen max-w-3xl flex-col px-4 pt-16 font-mono text-sm font-normal antialiased sm:px-8"
   >
-    <header class="relative mb-20 flex justify-between items-center sm:pl-16">
+    <header class="relative mb-20 flex justify-between items-center">
       <div class="flex gap-2">
         <a
           class="inline-flex items-center grayscale hover:filter-none sm:relative sm:inline-block"
@@ -111,7 +116,71 @@
       </nav>
     </header>
 
-    <main></main>
+    <main class="flex flex-col gap-8">
+      <section>
+        <h2
+          class="text-2xl font-bold text-[#2abc89] mb-6 border-b border-[#2abc89] pb-2"
+        >
+          Projects
+        </h2>
+
+        <div
+          class="bg-[#212326] rounded-lg shadow-lg p-6 border border-[#2abc89]/40 mb-6"
+        >
+          <h3 class="text-xl font-semibold text-white mb-2">
+            Movie Watchlist App
+          </h3>
+          <p class="text-gray-300 mb-4">
+            A web application that allows users to create, manage, and share
+            watchlists for movies and TV shows. Built with
+            <span class="text-[#2abc89]">React</span>,
+            <span class="text-[#2abc89]">TMDb API</span>, and
+            <span class="text-[#2abc89]">Tailwind CSS</span>, it features
+            authentication, responsive UI, and search functionality to find
+            movies instantly.
+          </p>
+          <ul class="text-gray-300 list-disc pl-6 mb-4">
+            <li>Authentication system for personal watchlists</li>
+            <li>Responsive design for all screen sizes</li>
+            <li>Ability to see friends’ watchlists by username search</li>
+          </ul>
+          <div class="flex gap-4">
+            <a href="#" class="text-[#2abc89] font-semibold hover:underline"
+              >Live Demo →</a
+            >
+            <a href="#" class="text-[#2abc89] font-semibold hover:underline"
+              >GitHub Repo →</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="bg-[#212326] rounded-lg shadow-lg p-6 border border-[#2abc89]/40 mb-6"
+        >
+          <h3 class="text-xl font-semibold text-white mb-2">Cricket Dream</h3>
+          <p class="text-gray-300 mb-4">
+            An interactive cricket fan website where users can select their top
+            6 cricket players to form a dream team. Created with
+            <span class="text-[#2abc89]">JavaScript</span> and
+            <span class="text-[#2abc89]">Tailwind CSS</span>, the platform also
+            stores user teams locally.
+          </p>
+          <ul class="text-gray-300 list-disc pl-6 mb-4">
+            <li>Dynamic player selection interface</li>
+            <li>Persistent storage using localStorage</li>
+            <li>Optimized for mobile and desktop</li>
+          </ul>
+          <div class="flex gap-4">
+            <a href="#" class="text-[#2abc89] font-semibold hover:underline"
+              >Live Demo →</a
+            >
+            <a href="#" class="text-[#2abc89] font-semibold hover:underline"
+              >GitHub Repo →</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer
       class="mt-auto flex w-full flex-col items-center justify-center gap-y-2 pt-20 pb-4 text-center align-top font-semibold sm:flex-row sm:justify-between sm:text-xs text-gray-400"
