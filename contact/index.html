@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
-      href="../../static/favicon.ico"
+      href="/assets/images/favicon.ico"
       type="image/x-icon"
     />
-    <link href="../output.css" rel="stylesheet" />
-    <title>Projects</title>
+    <script src="/assets/js/animation.js"></script>
+    <link href="/assets/css/output.css" rel="stylesheet" />
+    <title>Contact</title>
   </head>
 
   <body
@@ -22,7 +23,7 @@
           href="/"
         >
           <img
-            src="../../static/Hello.gif"
+            src="/assets/images/static/Hello.gif"
             class="mr-3 h-10 w-10 sm:mr-0 sm:h-20 sm:w-20"
           />
         </a>
@@ -33,22 +34,22 @@
           >
             <a
               class="text-[#2abc89] px-4 py-4 underline-offset-2 hover:underline sm:py-0"
-              href="../../index.html"
+              href="/about/"
             >
               About me </a
             ><a
               class="text-[#2abc89] px-4 py-4 underline-offset-2 hover:underline sm:py-0"
-              href="../pages/skills.html"
+              href="/skills/"
             >
               Skills </a
             ><a
               class="text-[#2abc89] px-4 py-4 underline-offset-2 hover:underline sm:py-0"
-              href="../pages/projects.html"
+              href="/projects/"
             >
               Projects </a
             ><a
               class="text-[#2abc89] px-4 py-4 underline-offset-2 hover:underline sm:py-0"
-              href="../pages/contact.html"
+              href="/contact/"
             >
               Contact
             </a>
@@ -87,28 +88,28 @@
           <li>
             <a
               class="flex flex-row-reverse text-[#2abc89] px-4 py-4 underline-offset-2 hover:underline sm:py-0"
-              href="../../index.html"
+              href="/about/"
               >About me</a
             >
           </li>
           <li>
             <a
               class="flex flex-row-reverse text-[#2abc89] px-4 py-4 underline-offset-2 hover:underline sm:py-0"
-              href="../pages/skills.html"
+              href="/skills/"
               >Skills</a
             >
           </li>
           <li>
             <a
               class="flex flex-row-reverse text-[#2abc89] px-4 py-4 underline-offset-2 hover:underline sm:py-0"
-              href="../pages/projects.html"
+              href="/projects/"
               >Projects</a
             >
           </li>
           <li>
             <a
               class="flex flex-row-reverse text-[#2abc89] px-4 py-4 underline-offset-2 hover:underline sm:py-0"
-              href="../pages/contact.html"
+              href="/contact/"
               >Contact</a
             >
           </li>
@@ -116,67 +117,79 @@
       </nav>
     </header>
 
-    <main class="flex flex-col gap-8">
-      <section>
-        <h2
-          class="text-2xl font-bold text-[#2abc89] mb-6 border-b border-[#2abc89] pb-2"
-        >
-          Projects
-        </h2>
-
+    <main class="page-transition">
+      <section class="mb-24">
         <div
-          class="bg-[#212326] rounded-lg shadow-lg p-6 border border-[#2abc89]/40 mb-6"
+          class="bg-global-bg/60 border border-gray-800 rounded-lg p-4 sm:p-6"
         >
-          <h3 class="text-xl font-semibold text-white mb-2">
-            Movie Watchlist App
-          </h3>
-          <p class="text-gray-300 mb-4">
-            A web application that allows users to create, manage, and share
-            watchlists for movies and TV shows. Built with
-            <span class="text-[#2abc89]">React</span>,
-            <span class="text-[#2abc89]">TMDb API</span>, and
-            <span class="text-[#2abc89]">Tailwind CSS</span>, it features
-            authentication, responsive UI, and search functionality to find
-            movies instantly.
-          </p>
-          <ul class="text-gray-300 list-disc pl-6 mb-4">
-            <li>Authentication system for personal watchlists</li>
-            <li>Responsive design for all screen sizes</li>
-            <li>Ability to see friends’ watchlists by username search</li>
-          </ul>
-          <div class="flex gap-4">
-            <a href="#" class="text-[#2abc89] font-semibold hover:underline"
-              >Live Demo →</a
-            >
-            <a href="#" class="text-[#2abc89] font-semibold hover:underline"
-              >GitHub Repo →</a
-            >
-          </div>
-        </div>
+          <div
+            class="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between"
+          >
+            <div class="max-w-xl">
+              <h2 class="text-4xl font-bold text-[#2abc89]">Say hello.</h2>
+              <p class="mt-2 text-sm text-gray-400">
+                FEEL FREE TO DROP ME A MESSAGE ANYTIME. <br />
+                I WOULD LOVE TO HEAR FROM YOU.
+              </p>
 
-        <div
-          class="bg-[#212326] rounded-lg shadow-lg p-6 border border-[#2abc89]/40 mb-6"
-        >
-          <h3 class="text-xl font-semibold text-white mb-2">Cricket Dream</h3>
-          <p class="text-gray-300 mb-4">
-            An interactive cricket fan website where users can select their top
-            6 cricket players to form a dream team. Created with
-            <span class="text-[#2abc89]">JavaScript</span> and
-            <span class="text-[#2abc89]">Tailwind CSS</span>, the platform also
-            stores user teams locally.
-          </p>
-          <ul class="text-gray-300 list-disc pl-6 mb-4">
-            <li>Dynamic player selection interface</li>
-            <li>Persistent storage using localStorage</li>
-            <li>Optimized for mobile and desktop</li>
-          </ul>
-          <div class="flex gap-4">
-            <a href="#" class="text-[#2abc89] font-semibold hover:underline"
-              >Live Demo →</a
-            >
-            <a href="#" class="text-[#2abc89] font-semibold hover:underline"
-              >GitHub Repo →</a
-            >
+              <div class="mt-4 text-sm text-gray-300 space-y-3">
+                <div>
+                  <strong class="block text-xs text-gray-400">Email</strong>
+                  <a
+                    class="text-[#2abc89] hover:underline"
+                    href="mailto:sobhanmridha786.email@gmail.com"
+                    >sobhanmridha786.email@gmail.com</a
+                  >
+                </div>
+
+                <div>
+                  <strong class="block text-xs text-gray-400">LinkedIn</strong>
+                  <a
+                    target="_blank"
+                    class="text-[#2abc89] hover:underline"
+                    href="https://www.linkedin.com/in/sobhanmridha"
+                    >www.linkedin.com/in/sobhanmridha</a
+                  >
+                </div>
+
+                <div>
+                  <strong class="block text-xs text-gray-400">Facebook</strong>
+                  <a
+                    target="_blank"
+                    class="text-[#2abc89] hover:underline"
+                    href="https://www.facebook.com/tanvir.mridha.56481"
+                    >www.facebook.com/tanvir.mridha</a
+                  >
+                </div>
+
+                <div>
+                  <strong class="block text-xs text-gray-400">GitHub</strong>
+                  <a
+                    target="_blank"
+                    class="text-[#2abc89] hover:underline"
+                    href="https://github.com/SobhanMridha"
+                    >github.com/SobhanMridha</a
+                  >
+                </div>
+
+                <div class="pt-2">
+                  <a
+                    href="#"
+                    class="inline-block rounded-sm px-8 py-2 text-xs font-semibold border border-gray-700 hover:bg-gray-800"
+                    >Download CV</a
+                  >
+                  <a
+                    href="mailto:sobhanmridha786.email@gmail.com?subject=Interview%20Request"
+                    class="inline-block rounded-sm px-8 py-2 text-xs font-semibold bg-[#2abc89] text-black"
+                    >Email me</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="border-2 border-[#2abc89] mt-6 sm:mt-0 w-full sm:w-96">
+              <img src="/assets/images/static/me.jpg" alt="" />
+            </div>
           </div>
         </div>
       </section>
@@ -191,25 +204,25 @@
       <nav class="flex gap-x-2 sm:gap-x-0 sm:divide-x sm:divide-gray-500">
         <a
           class="px-3 py-2 hover:underline sm:py-0 hover:text-gray-200"
-          href="../../index.html"
+          href="/about/"
         >
           About me
         </a>
         <a
           class="px-3 py-2 hover:underline sm:py-0 hover:text-gray-200"
-          href="../pages/skills.html"
+          href="/skills/"
         >
           Skills
         </a>
         <a
           class="px-3 py-2 hover:underline sm:py-0 hover:text-gray-200"
-          href="../pages/projects.html"
+          href="/projects/"
         >
           Porjects
         </a>
         <a
           class="px-3 py-2 hover:underline sm:py-0 hover:text-gray-200"
-          href="../pages/contact.html"
+          href="/contact/"
         >
           Contact
         </a>
