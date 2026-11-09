@@ -3,307 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="/assets/images/favicon.ico"
-      type="image/x-icon"
-    />
-    <script src="/assets/js/animation.js"></script>
+    <title>About · Sobhan Mridha</title>
+    <meta name="description" content="About MD Sobhan Mridha: CSE student at National University, former General Secretary of the Programming Club at Tejgaon College." />
+    <meta name="theme-color" content="#1D1F20" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="About · Sobhan Mridha" />
+    <meta property="og:description" content="About MD Sobhan Mridha: CSE student at National University, former General Secretary of the Programming Club at Tejgaon College." />
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon" />
     <link href="/assets/css/output.css" rel="stylesheet" />
-    <title>Home</title>
+    <script src="/assets/js/main.js" defer></script>
   </head>
-
-  <body
-    class="bg-global-bg text-global-text mx-auto flex min-h-screen max-w-3xl flex-col px-4 pt-16 font-mono text-sm font-normal antialiased sm:px-8"
-  >
-    <header class="relative mb-20 flex justify-between items-center">
-      <div class="flex gap-2">
-        <a
-          class="inline-flex items-center grayscale hover:filter-none sm:relative sm:inline-block"
-          href="/"
-        >
-          <img
-            src="/assets/images/static/Hello.gif"
-            class="mr-3 h-10 w-10 sm:mr-0 sm:h-20 sm:w-20"
-          />
-        </a>
-        <div>
-          <span class="text-xl font-bold sm:text-2xl">Sobhan Mridha</span>
-          <nav
-            class="bg-global-bg/85 sm:divide-[#2abc89] absolute -inset-x-4 top-14 hidden flex-col items-end gap-y-4 rounded-md py-4 shadow backdrop-blur-sm group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:-ms-4 sm:mt-1 sm:flex sm:flex-row sm:items-center sm:divide-x sm:rounded-none sm:bg-transparent sm:py-0 sm:shadow-none sm:backdrop-blur-none"
-          >
-            <a
-              class="text-[#2abc89] px-4 py-4 underline-offset-2 hover:underline sm:py-0"
-              href="/about/"
-            >
-              About me </a
-            ><a
-              class="text-[#2abc89] px-4 py-4 underline-offset-2 hover:underline sm:py-0"
-              href="/skills/"
-            >
-              Skills </a
-            ><a
-              class="text-[#2abc89] px-4 py-4 underline-offset-2 hover:underline sm:py-0"
-              href="/projects/"
-            >
-              Projects </a
-            ><a
-              class="text-[#2abc89] px-4 py-4 underline-offset-2 hover:underline sm:py-0"
-              href="/contact/"
-            >
-              Contact
-            </a>
-          </nav>
-        </div>
+  <body class="mx-auto flex min-h-screen max-w-3xl flex-col bg-global-bg px-4 pt-10 font-mono text-sm font-normal text-global-text antialiased sm:px-8 sm:pt-16">
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-2 focus:z-50 focus:bg-accent focus:px-3 focus:py-1 focus:text-global-bg">Skip to content</a>
+    <header class="relative mb-14 flex items-center justify-between sm:mb-20">
+    <div class="flex items-center gap-2">
+      <a href="/" aria-label="Home" class="grayscale hover:filter-none">
+        <img src="/assets/images/static/Hello.gif" alt="" width="80" height="80" class="mr-3 h-10 w-10 sm:mr-0 sm:h-20 sm:w-20" />
+      </a>
+      <div>
+        <a href="/" class="text-xl font-bold sm:text-2xl">Sobhan Mridha</a>
+        <nav id="site-nav" aria-label="Main" class="absolute left-0 right-0 top-full z-50 mt-2 hidden flex-col rounded-md bg-global-bg/95 py-3 shadow backdrop-blur-sm sm:static sm:-ms-4 sm:mt-1 sm:flex sm:flex-row sm:items-center sm:divide-x sm:divide-accent sm:bg-transparent sm:py-0 sm:shadow-none"><a href="/about/" aria-current="page" class="px-4 py-3 text-accent underline-offset-4 hover:underline sm:py-0 font-bold underline">About</a><a href="/skills/" class="px-4 py-3 text-accent underline-offset-4 hover:underline sm:py-0 ">Skills</a><a href="/projects/" class="px-4 py-3 text-accent underline-offset-4 hover:underline sm:py-0 ">Projects</a><a href="/achievements/" class="px-4 py-3 text-accent underline-offset-4 hover:underline sm:py-0 ">Achievements</a><a href="/contact/" class="px-4 py-3 text-accent underline-offset-4 hover:underline sm:py-0 ">Contact</a></nav>
       </div>
+    </div>
+    <button id="menu-toggle" class="text-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent sm:hidden" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">
+      <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+    </button>
+  </header>
+    <main id="main" class="fade-in">
 
-      <!-- mobile menu button -->
-      <button
-        id="menu-toggle"
-        class="sm:hidden text-[#2abc89] focus:outline-none"
-        aria-label="Toggle menu"
-      >
-        <svg
-          class="h-8 w-8"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M4 6h16M4 12h16M4 18h16"
-          ></path>
-        </svg>
-      </button>
-
-      <!-- responsive menu -->
-      <nav
-        id="navigation-menu"
-        class="absolute left-0 right-0 top-full mt-2 z-50 hidden flex-col bg-global-bg/85 rounded-md py-4 shadow backdrop-blur-sm sm:static sm:flex sm:flex-row sm:items-center sm:gap-x-6 sm:bg-transparent sm:py-0 sm:shadow-none sm:backdrop-blur-none sm:hidden"
-      >
-        <ul>
-          <li>
-            <a
-              class="flex flex-row-reverse text-[#2abc89] px-4 py-4 underline-offset-2 hover:underline sm:py-0"
-              href="/about/"
-              >About me</a
-            >
-          </li>
-          <li>
-            <a
-              class="flex flex-row-reverse text-[#2abc89] px-4 py-4 underline-offset-2 hover:underline sm:py-0"
-              href="/skills/"
-              >Skills</a
-            >
-          </li>
-          <li>
-            <a
-              class="flex flex-row-reverse text-[#2abc89] px-4 py-4 underline-offset-2 hover:underline sm:py-0"
-              href="/projects/"
-              >Projects</a
-            >
-          </li>
-          <li>
-            <a
-              class="flex flex-row-reverse text-[#2abc89] px-4 py-4 underline-offset-2 hover:underline sm:py-0"
-              href="/contact/"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main class="page-transition">
-      <div
-        class="flex flex-col-reverse md:flex-row md:justify-between md:items-start gap-8"
-      >
+      <div class="flex flex-col-reverse gap-8 md:flex-row md:items-start md:justify-between">
         <section class="flex-1 space-y-6">
-          <h1 class="text-5xl font-bold text-[#c9c9c9]">Hello</h1>
-          <p class="text-gray-400 max-w-md leading-relaxed font-mono text-base">
-            <span class="text-3xl">I’m Sobhan Mridha,</span><br />
-            I am a passionate competitive programmer with a strong foundation in
-            algorithms, problem-solving, data structures, and critical thinking.
-            I actively participate in contests on platforms like Codeforces,
-            AtCoder, and CodeChef to continually challenge myself and improve my
-            skills.
+          <h1 class="text-5xl font-bold text-gray-200">About me</h1>
+          <p class="max-w-md text-base leading-relaxed text-gray-400">
+            <span class="text-3xl text-gray-200">MD Sobhan Mridha</span><br />
+            I’m studying Computer Science and Engineering at National University and spend most of my
+            time on algorithms and data structures. I’ve solved over 1500 problems, taken part in
+            100+ online contests, and compete in onsite contests with my team.
           </p>
-          <div>
-            <a href="/Resume.pdf" download
-              ><button
-                class="inline-flex items-center justify-center whitespace-nowrap font-mono font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2abc89] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1D1F20] disabled:pointer-events-none disabled:opacity-50 bg-[#212326] border border-[#2abc89] text-[#c9c9c9] hover:bg-[#2abc89] hover:text-[#1D1F20] h-10 px-6 py-3 uppercase tracking-wider transition-all duration-300 cursor-pointer"
-              >
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 256 256"
-                  class="h-4 w-4 mr-2"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M210.78,39.25l-130.25-23A16,16,0,0,0,62,29.23l-29.75,169a16,16,0,0,0,13,18.53l130.25,23a16,16,0,0,0,18.54-13l29.75-169A16,16,0,0,0,210.78,39.25ZM135.5,131.56a8,8,0,0,1-7.87,6.61,8.27,8.27,0,0,1-1.4-.12l-41.5-7.33A8,8,0,0,1,87.52,115L129,122.29A8,8,0,0,1,135.5,131.56Zm47-24.18a8,8,0,0,1-7.86,6.61,7.55,7.55,0,0,1-1.41-.13l-83-14.65a8,8,0,0,1,2.79-15.76l83,14.66A8,8,0,0,1,182.53,107.38Zm5.55-31.52a8,8,0,0,1-7.87,6.61,8.36,8.36,0,0,1-1.4-.12l-83-14.66a8,8,0,1,1,2.78-15.75l83,14.65A8,8,0,0,1,188.08,75.86Z"
-                  ></path>
-                </svg>
-                My Resume
-              </button></a
-            >
+          <p class="max-w-md leading-relaxed text-gray-400">
+            Outside contests I build small web projects with Flask and JavaScript, and I enjoy
+            teaching: I coached juniors in C, data structures and algorithms, and later helped lead
+            the Programming Club at Tejgaon College.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <a href="/Resume.pdf" download class="inline-flex h-10 items-center justify-center whitespace-nowrap border border-accent px-6 text-xs font-medium uppercase tracking-wider transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-global-bg bg-accent text-global-bg hover:bg-transparent hover:text-accent">My Resume</a>
+            <a href="/contact/" class="inline-flex h-10 items-center justify-center whitespace-nowrap border border-accent px-6 text-xs font-medium uppercase tracking-wider transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-global-bg bg-surface text-global-text hover:bg-accent hover:text-global-bg">Get in touch</a>
           </div>
         </section>
-
-        <section
-          class="max-w-xs bg-[#212326] rounded-lg shadow-lg p-6 text-gray-300 flex-shrink-0 mx-auto sm:mx-0"
-        >
-          <div class="mb-4">
-            <img
-              src="/assets/images/static/profile.png"
-              class="w-full h-72 rounded-md border-2 border-[#2abc89] object-cover"
-              alt="Profile Photo"
-            />
-          </div>
-
-          <div>
-            <h3 class="text-lg font-semibold mb-3">Find Me On</h3>
-            <div class="flex justify-start space-x-4">
-              <a href="https://github.com/SobhanMridha" target="_blank">
-                <img
-                  src="/assets/images/social/github.png"
-                  class="w-10 h-10 grayscale hover:filter-none"
-                  alt="GitHub"
-                />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/sobhanmridha/"
-                target="_blank"
-              >
-                <img
-                  src="/assets/images/social/likedin.png"
-                  class="w-10 h-10 grayscale hover:filter-none"
-                  alt="LinkedIn"
-                />
-              </a>
-              <a
-                href="https://www.facebook.com/md.sobhanmridha"
-                target="_blank"
-              >
-                <img
-                  src="/assets/images/social/facebook.png"
-                  class="w-10 h-10 grayscale hover:filter-none"
-                  alt="Facebook"
-                />
-              </a>
-              <a href="mailto:sobhanmridha786@gmail.com">
-                <img
-                  src="/assets/images/social/email.png"
-                  class="w-10 h-10 grayscale hover:filter-none"
-                  alt="Email"
-                />
-              </a>
-            </div>
-          </div>
-        </section>
+        <aside class="mx-auto w-full max-w-xs shrink-0 rounded-lg bg-surface p-6 text-gray-300 shadow-lg md:mx-0">
+    <img src="/assets/images/static/profile.webp" width="677" height="728" class="mb-4 h-72 w-full rounded-md border-2 border-accent object-cover" alt="Portrait of Sobhan Mridha" />
+    <h3 class="mb-3 text-lg font-semibold">Find me on</h3>
+    <div class="flex gap-4"><a href="https://github.com/SobhanMridha" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><img src="/assets/images/social/github.png" class="h-10 w-10 grayscale transition hover:filter-none" alt="GitHub" width="40" height="40" /></a><a href="https://www.linkedin.com/in/sobhanmridha/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="/assets/images/social/likedin.png" class="h-10 w-10 grayscale transition hover:filter-none" alt="LinkedIn" width="40" height="40" /></a><a href="https://www.facebook.com/md.sobhanmridha" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><img src="/assets/images/social/facebook.png" class="h-10 w-10 grayscale transition hover:filter-none" alt="Facebook" width="40" height="40" /></a><a href="mailto:sobhanmridha786@gmail.com" aria-label="Email" ><img src="/assets/images/social/email.png" class="h-10 w-10 grayscale transition hover:filter-none" alt="Email" width="40" height="40" /></a></div>
+  </aside>
       </div>
 
-      <div class="mt-4 sm:mt-0">
-        <h2
-          class="text-3xl font-bold mb-8 text-gray-300 border-b-2 border-[#2abc89] pb-2"
-        >
-          ACHIEVEMENTS
-        </h2>
+      <section class="mt-14">
+        <h2 class="mb-6 border-b-2 border-accent pb-2 text-2xl font-bold text-gray-200 sm:text-3xl">Education</h2>
+        <ol class="space-y-6 border-l border-accent/40 pl-6"><li class="relative">
+        <span class="absolute -left-[31px] top-1.5 h-2.5 w-2.5 rounded-full bg-accent"></span>
+        <div class="text-xs text-gray-500">Jan 2022 – present</div>
+        <h3 class="font-semibold text-gray-200">BSc in Computer Science and Engineering</h3>
+        <div class="text-accent">National University</div>
+        <p class="mt-1 text-gray-400">CGPA 3.42 / 4.00 (through 7th semester)</p>
+      </li></ol>
+      </section>
 
-        <ul class="space-y-3 text-gray-700 dark:text-gray-300 text-sm">
-          <li>
-            <span
-              >➤ Qualified and participated in ACM-ICPC Asia Dhaka Regional
-              Contest -</span
-            >
-            <a
-              href="https://icpc.global/ICPCID/EL0R1D6N5VIM"
-              target="_blank"
-              class="ml-1 text-[#2abc89] hover:underline"
-              >icpc.global/ICPCID/EL0R1D6N5VIM</a
-            >
-          </li>
-
-          <li class="flex flex-wrap gap-x-6 gap-y-1">
-            <span
-              >➤ Codeforces: <strong>Pupil,</strong> Max. Rating – 1203</span
-            >
-            <a
-              href="https://codeforces.com/profile/ReMade"
-              target="_blank"
-              class="text-[#2abc89] hover:underline"
-              >(ReMade)</a
-            >
-          </li>
-
-          <li class="flex flex-wrap gap-x-6 gap-y-1">
-            <span>➤ Codechef: <strong>3 star</strong>, Max. Rating – 1603</span>
-            <a
-              href="https://www.codechef.com/users/sobhan_mridha"
-              target="_blank"
-              class="text-[#2abc89] hover:underline"
-              >(sobhan_mridha)</a
-            >
-          </li>
-
-          <li>
-            <span
-              >➤ Solved <strong>1000+</strong> problems at various online judges
-              and participated in <strong>100+</strong> online programming
-              contests</span
-            >
-          </li>
-        </ul>
-      </div>
+      <section class="mt-14">
+        <h2 class="mb-6 border-b-2 border-accent pb-2 text-2xl font-bold text-gray-200 sm:text-3xl">Volunteer &amp; leadership</h2>
+        <ol class="space-y-6 border-l border-accent/40 pl-6"><li class="relative">
+        <span class="absolute -left-[31px] top-1.5 h-2.5 w-2.5 rounded-full bg-accent"></span>
+        <div class="text-xs text-gray-500">Feb 2025 – Apr 2026</div>
+        <h3 class="font-semibold text-gray-200">General Secretary</h3>
+        <div class="text-accent">Programming Club, Tejgaon College</div>
+        <p class="mt-1 text-gray-400">Helped members collaborate effectively and get things done. Managed club events and projects.</p>
+      </li><li class="relative">
+        <span class="absolute -left-[31px] top-1.5 h-2.5 w-2.5 rounded-full bg-accent"></span>
+        <div class="text-xs text-gray-500">Oct 2023 – Feb 2025</div>
+        <h3 class="font-semibold text-gray-200">Programming Contest Coordinator</h3>
+        <div class="text-accent">Programming Club, Tejgaon College</div>
+        <p class="mt-1 text-gray-400">Guided students in C, data structures and algorithms, and coordinated coding contests for junior members on virtual judge platforms.</p>
+      </li></ol>
+      </section>
     </main>
-
-    <footer
-      class="mt-auto flex w-full flex-col items-center justify-center gap-y-2 pt-20 pb-4 text-center align-top font-semibold sm:flex-row sm:justify-between sm:text-xs text-gray-400"
-    >
-      <div class="mr-0 sm:mr-4">
-        © Sobhan Mridha 2025.<span class="inline-block">&nbsp;💀&nbsp;</span>
-      </div>
-      <nav class="flex gap-x-2 sm:gap-x-0 sm:divide-x sm:divide-gray-500">
-        <a
-          class="px-3 py-2 hover:underline sm:py-0 hover:text-gray-200"
-          href="/about/"
-        >
-          About me
-        </a>
-        <a
-          class="px-3 py-2 hover:underline sm:py-0 hover:text-gray-200"
-          href="/skills/"
-        >
-          Skills
-        </a>
-        <a
-          class="px-3 py-2 hover:underline sm:py-0 hover:text-gray-200"
-          href="/projects/"
-        >
-          Porjects
-        </a>
-        <a
-          class="px-3 py-2 hover:underline sm:py-0 hover:text-gray-200"
-          href="/contact/"
-        >
-          Contact
-        </a>
-      </nav>
-    </footer>
-
-    <script>
-      const toggleBtn = document.getElementById("menu-toggle");
-      const menu = document.getElementById("navigation-menu");
-
-      toggleBtn.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
-      });
-    </script>
+    <footer class="mt-auto flex w-full flex-col items-center justify-center gap-y-2 pb-4 pt-20 text-center font-semibold text-gray-400 sm:flex-row sm:justify-between sm:text-xs">
+    <div>© MD Sobhan Mridha 2026</div>
+    <nav aria-label="Footer" class="flex flex-wrap justify-center gap-x-2 sm:gap-x-0 sm:divide-x sm:divide-gray-500"><a class="px-3 py-2 hover:text-gray-200 hover:underline sm:py-0" href="/about/">About</a><a class="px-3 py-2 hover:text-gray-200 hover:underline sm:py-0" href="/skills/">Skills</a><a class="px-3 py-2 hover:text-gray-200 hover:underline sm:py-0" href="/projects/">Projects</a><a class="px-3 py-2 hover:text-gray-200 hover:underline sm:py-0" href="/achievements/">Achievements</a><a class="px-3 py-2 hover:text-gray-200 hover:underline sm:py-0" href="/contact/">Contact</a></nav>
+  </footer>
   </body>
 </html>

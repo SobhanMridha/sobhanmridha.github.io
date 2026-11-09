@@ -3,377 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="/assets/images/favicon.ico"
-      type="image/x-icon"
-    />
-    <script src="/assets/js/animation.js"></script>
+    <title>Skills · Sobhan Mridha</title>
+    <meta name="description" content="Technical skills of MD Sobhan Mridha: C++, C, Python, JavaScript, SQL, React, Flask, Node, Express, MySQL and MongoDB." />
+    <meta name="theme-color" content="#1D1F20" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Skills · Sobhan Mridha" />
+    <meta property="og:description" content="Technical skills of MD Sobhan Mridha: C++, C, Python, JavaScript, SQL, React, Flask, Node, Express, MySQL and MongoDB." />
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon" />
     <link href="/assets/css/output.css" rel="stylesheet" />
-    <title>Skills</title>
+    <script src="/assets/js/main.js" defer></script>
   </head>
-
-  <body
-    class="bg-global-bg text-global-text mx-auto flex min-h-screen max-w-3xl flex-col px-4 pt-16 font-mono text-sm font-normal antialiased sm:px-8"
-  >
-    <header class="relative mb-20 flex justify-between items-center">
-      <div class="flex gap-2">
-        <a
-          class="inline-flex items-center grayscale hover:filter-none sm:relative sm:inline-block"
-          href="/"
-        >
-          <img
-            src="/assets/images/static/Hello.gif"
-            class="mr-3 h-10 w-10 sm:mr-0 sm:h-20 sm:w-20"
-          />
-        </a>
-        <div>
-          <span class="text-xl font-bold sm:text-2xl">Sobhan Mridha</span>
-          <nav
-            class="bg-global-bg/85 sm:divide-[#2abc89] absolute -inset-x-4 top-14 hidden flex-col items-end gap-y-4 rounded-md py-4 shadow backdrop-blur-sm group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:-ms-4 sm:mt-1 sm:flex sm:flex-row sm:items-center sm:divide-x sm:rounded-none sm:bg-transparent sm:py-0 sm:shadow-none sm:backdrop-blur-none"
-          >
-            <a
-              class="text-[#2abc89] px-4 py-4 underline-offset-2 hover:underline sm:py-0"
-              href="/about/"
-            >
-              About me </a
-            ><a
-              class="text-[#2abc89] px-4 py-4 underline-offset-2 hover:underline sm:py-0"
-              href="/skills/"
-            >
-              Skills </a
-            ><a
-              class="text-[#2abc89] px-4 py-4 underline-offset-2 hover:underline sm:py-0"
-              href="/projects/"
-            >
-              Projects </a
-            ><a
-              class="text-[#2abc89] px-4 py-4 underline-offset-2 hover:underline sm:py-0"
-              href="/contact/"
-            >
-              Contact
-            </a>
-          </nav>
-        </div>
+  <body class="mx-auto flex min-h-screen max-w-3xl flex-col bg-global-bg px-4 pt-10 font-mono text-sm font-normal text-global-text antialiased sm:px-8 sm:pt-16">
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-2 focus:z-50 focus:bg-accent focus:px-3 focus:py-1 focus:text-global-bg">Skip to content</a>
+    <header class="relative mb-14 flex items-center justify-between sm:mb-20">
+    <div class="flex items-center gap-2">
+      <a href="/" aria-label="Home" class="grayscale hover:filter-none">
+        <img src="/assets/images/static/Hello.gif" alt="" width="80" height="80" class="mr-3 h-10 w-10 sm:mr-0 sm:h-20 sm:w-20" />
+      </a>
+      <div>
+        <a href="/" class="text-xl font-bold sm:text-2xl">Sobhan Mridha</a>
+        <nav id="site-nav" aria-label="Main" class="absolute left-0 right-0 top-full z-50 mt-2 hidden flex-col rounded-md bg-global-bg/95 py-3 shadow backdrop-blur-sm sm:static sm:-ms-4 sm:mt-1 sm:flex sm:flex-row sm:items-center sm:divide-x sm:divide-accent sm:bg-transparent sm:py-0 sm:shadow-none"><a href="/about/" class="px-4 py-3 text-accent underline-offset-4 hover:underline sm:py-0 ">About</a><a href="/skills/" aria-current="page" class="px-4 py-3 text-accent underline-offset-4 hover:underline sm:py-0 font-bold underline">Skills</a><a href="/projects/" class="px-4 py-3 text-accent underline-offset-4 hover:underline sm:py-0 ">Projects</a><a href="/achievements/" class="px-4 py-3 text-accent underline-offset-4 hover:underline sm:py-0 ">Achievements</a><a href="/contact/" class="px-4 py-3 text-accent underline-offset-4 hover:underline sm:py-0 ">Contact</a></nav>
       </div>
+    </div>
+    <button id="menu-toggle" class="text-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent sm:hidden" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">
+      <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+    </button>
+  </header>
+    <main id="main" class="fade-in">
 
-      <!-- mobile menu button -->
-      <button
-        id="menu-toggle"
-        class="sm:hidden text-[#2abc89] focus:outline-none"
-        aria-label="Toggle menu"
-      >
-        <svg
-          class="h-8 w-8"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M4 6h16M4 12h16M4 18h16"
-          ></path>
-        </svg>
-      </button>
-
-      <!-- responsive menu -->
-      <nav
-        id="navigation-menu"
-        class="absolute left-0 right-0 top-full mt-2 z-50 hidden flex-col bg-global-bg/85 rounded-md py-4 shadow backdrop-blur-sm sm:static sm:flex sm:flex-row sm:items-center sm:gap-x-6 sm:bg-transparent sm:py-0 sm:shadow-none sm:backdrop-blur-none sm:hidden"
-      >
-        <ul>
-          <li>
-            <a
-              class="flex flex-row-reverse text-[#2abc89] px-4 py-4 underline-offset-2 hover:underline sm:py-0"
-              href="/about/"
-              >About me</a
-            >
-          </li>
-          <li>
-            <a
-              class="flex flex-row-reverse text-[#2abc89] px-4 py-4 underline-offset-2 hover:underline sm:py-0"
-              href="/skills/"
-              >Skills</a
-            >
-          </li>
-          <li>
-            <a
-              class="flex flex-row-reverse text-[#2abc89] px-4 py-4 underline-offset-2 hover:underline sm:py-0"
-              href="/projects/"
-              >Projects</a
-            >
-          </li>
-          <li>
-            <a
-              class="flex flex-row-reverse text-[#2abc89] px-4 py-4 underline-offset-2 hover:underline sm:py-0"
-              href="/contact/"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main class="page-transition">
-      <section class="section max-w-6xl mx-auto">
-        <h2
-          class="text-3xl font-bold mb-8 text-gray-300 border-b-2 border-[#2abc89] pb-2"
-        >
-          Technical Skills
-        </h2>
-
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
-          <section
-            class="bg-[#212326] rounded-lg p-6 shadow-md border border-[#2abc89]"
-          >
-            <h4
-              class="flex items-center mb-4 text-lg font-semibold text-[#2abc89]"
-            >
-              Programmings languages
-            </h4>
-            <ul>
-              <li class="flex items-center mb-2">
-                <img
-                  src="/assets/images/skills/c.svg"
-                  class="w-5 h-5 mr-2"
-                  alt="C"
-                />C
-              </li>
-              <li class="flex items-center mb-2">
-                <img
-                  src="/assets/images/skills/c++.svg"
-                  class="w-5 h-5 mr-2"
-                  alt="c++"
-                />C++
-              </li>
-
-              <li class="flex items-center mb-2">
-                <img
-                  src="/assets/images/skills/javascript.svg"
-                  class="w-5 h-5 mr-2"
-                  alt="JavaScript"
-                />JavaScript
-              </li>
-
-              <li class="flex items-center mb-2">
-                <img
-                  src="/assets/images/skills/python.svg"
-                  class="w-5 h-5 mr-2"
-                  alt="Python"
-                />Python
-              </li>
-            </ul>
-          </section>
-
-          <section
-            class="bg-[#212326] rounded-lg p-6 shadow-md border border-[#2abc89]"
-          >
-            <h4
-              class="flex items-center mb-4 text-lg font-semibold text-[#2abc89]"
-            >
-              Web Frontend
-            </h4>
-            <ul>
-              <li class="flex items-center mb-2">
-                <img
-                  src="/assets/images/skills/html5.svg"
-                  class="w-5 h-5 mr-2"
-                  alt="HTML"
-                />HTML
-              </li>
-              <li class="flex items-center mb-2">
-                <img
-                  src="/assets/images/skills/css3.svg"
-                  class="w-5 h-5 mr-2"
-                  alt="CSS"
-                />CSS
-              </li>
-              <li class="flex items-center mb-2">
-                <img
-                  src="/assets/images/skills/react.svg"
-                  class="w-5 h-5 mr-2"
-                  alt="React"
-                />React
-              </li>
-              <li class="flex items-center mb-2">
-                <img
-                  src="/assets/images/skills/tailwind.svg"
-                  class="w-5 h-5 mr-2"
-                  alt="Tailwind"
-                />Tailwind
-              </li>
-              <li class="flex items-center mb-2">
-                <img
-                  src="/assets/images/skills/bootstrap.svg"
-                  class="w-5 h-5 mr-2"
-                  alt="Bootstrap"
-                />Bootstrap
-              </li>
-            </ul>
-          </section>
-
-          <section
-            class="bg-[#212326] rounded-lg p-6 shadow-md border border-[#2abc89]"
-          >
-            <h4
-              class="flex items-center mb-4 text-lg font-semibold text-[#2abc89]"
-            >
-              Web Backend
-            </h4>
-            <ul>
-              <li class="flex items-center mb-2">
-                <img
-                  src="/assets/images/skills/node-dot-js.svg"
-                  class="w-5 h-5 mr-2"
-                  alt="Node"
-                />Node
-              </li>
-              <li class="flex items-center mb-2">
-                <img
-                  src="/assets/images/skills/express.svg"
-                  class="w-5 h-5 mr-2"
-                  alt="Express"
-                />Express
-              </li>
-
-              <li class="flex items-center mb-2">
-                <img
-                  src="/assets/images/skills/django.svg"
-                  class="w-5 h-5 mr-2"
-                  alt="Django"
-                />Django
-              </li>
-              <li class="flex items-center mb-2">
-                <img
-                  src="/assets/images/skills/flask.svg"
-                  class="w-5 h-5 mr-2"
-                  alt="Flask"
-                />Flask
-              </li>
-            </ul>
-          </section>
-
-          <section
-            class="bg-[#212326] rounded-lg p-6 shadow-md border border-[#2abc89]"
-          >
-            <h4
-              class="flex items-center mb-4 text-lg font-semibold text-[#2abc89]"
-            >
-              Databases
-            </h4>
-            <ul>
-              <li class="flex items-center mb-2">
-                <img
-                  src="/assets/images/skills/mysql.svg"
-                  class="w-5 h-5 mr-2"
-                  alt="Mysql"
-                />Mysql
-              </li>
-              <li class="flex items-center mb-2">
-                <img
-                  src="/assets/images/skills/mongodb.svg"
-                  class="w-5 h-5 mr-2"
-                  alt="Mongodb"
-                />Mongodb
-              </li>
-            </ul>
-          </section>
-
-          <section
-            class="bg-[#212326] rounded-lg p-6 shadow-md border border-[#2abc89]"
-          >
-            <h4
-              class="flex items-center mb-4 text-lg font-semibold text-[#2abc89]"
-            >
-              Other tools
-            </h4>
-            <ul>
-              <li class="flex items-center mb-2">
-                <img
-                  src="/assets/images/skills/git.svg"
-                  class="w-5 h-5 mr-2"
-                  alt="Git"
-                />Git
-              </li>
-              <li class="flex items-center mb-2">
-                <img
-                  src="/assets/images/skills/github.svg"
-                  class="w-5 h-5 mr-2"
-                  alt="Github"
-                />Github
-              </li>
-              <li class="flex items-center mb-2">
-                <img
-                  src="/assets/images/skills/visualstudiocode.svg"
-                  class="w-5 h-5 mr-2"
-                  alt="VScode"
-                />VScode
-              </li>
-            </ul>
-          </section>
-
-          <section
-            class="bg-[#212326] rounded-lg p-6 shadow-md border border-[#2abc89]"
-          >
-            <h4
-              class="flex items-center mb-4 text-lg font-semibold text-[#2abc89]"
-            >
-              Human languages
-            </h4>
-            <ul>
-              <li class="mb-2">English</li>
-              <li class="mb-2">Hindi</li>
-              <li>Bangla</li>
-            </ul>
-          </section>
-        </div>
+      <section>
+        <h1 class="sr-only">Skills</h1>
+        <h2 class="mb-6 border-b-2 border-accent pb-2 text-2xl font-bold text-gray-200 sm:text-3xl">Technical skills</h2>
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2"><div class="rounded-lg border border-accent/30 bg-surface p-5 shadow-md "><h3 class="mb-4 text-lg font-semibold text-accent">Languages</h3>
+               <ul class="space-y-2"><li class="flex items-center"><img src="/assets/images/skills/c++.svg" class="mr-2 h-5 w-5" alt="" width="20" height="20" />C++</li><li class="flex items-center"><img src="/assets/images/skills/c.svg" class="mr-2 h-5 w-5" alt="" width="20" height="20" />C</li><li class="flex items-center"><img src="/assets/images/skills/python.svg" class="mr-2 h-5 w-5" alt="" width="20" height="20" />Python</li><li class="flex items-center"><img src="/assets/images/skills/javascript.svg" class="mr-2 h-5 w-5" alt="" width="20" height="20" />JavaScript</li><li class="flex items-center"><img src="/assets/images/skills/mysql.svg" class="mr-2 h-5 w-5" alt="" width="20" height="20" />SQL</li></ul></div><div class="rounded-lg border border-accent/30 bg-surface p-5 shadow-md "><h3 class="mb-4 text-lg font-semibold text-accent">Frontend</h3>
+               <ul class="space-y-2"><li class="flex items-center"><img src="/assets/images/skills/html5.svg" class="mr-2 h-5 w-5" alt="" width="20" height="20" />HTML</li><li class="flex items-center"><img src="/assets/images/skills/css3.svg" class="mr-2 h-5 w-5" alt="" width="20" height="20" />CSS</li><li class="flex items-center"><img src="/assets/images/skills/react.svg" class="mr-2 h-5 w-5" alt="" width="20" height="20" />React</li><li class="flex items-center"><img src="/assets/images/skills/tailwind.svg" class="mr-2 h-5 w-5" alt="" width="20" height="20" />Tailwind</li><li class="flex items-center"><img src="/assets/images/skills/bootstrap.svg" class="mr-2 h-5 w-5" alt="" width="20" height="20" />Bootstrap</li></ul></div><div class="rounded-lg border border-accent/30 bg-surface p-5 shadow-md "><h3 class="mb-4 text-lg font-semibold text-accent">Backend</h3>
+               <ul class="space-y-2"><li class="flex items-center"><img src="/assets/images/skills/node-dot-js.svg" class="mr-2 h-5 w-5" alt="" width="20" height="20" />Node.js</li><li class="flex items-center"><img src="/assets/images/skills/express.svg" class="mr-2 h-5 w-5" alt="" width="20" height="20" />Express</li><li class="flex items-center"><img src="/assets/images/skills/flask.svg" class="mr-2 h-5 w-5" alt="" width="20" height="20" />Flask</li><li class="flex items-center"><img src="/assets/images/skills/django.svg" class="mr-2 h-5 w-5" alt="" width="20" height="20" />Django</li></ul></div><div class="rounded-lg border border-accent/30 bg-surface p-5 shadow-md "><h3 class="mb-4 text-lg font-semibold text-accent">Databases</h3>
+               <ul class="space-y-2"><li class="flex items-center"><img src="/assets/images/skills/mysql.svg" class="mr-2 h-5 w-5" alt="" width="20" height="20" />MySQL</li><li class="flex items-center"><img src="/assets/images/skills/mongodb.svg" class="mr-2 h-5 w-5" alt="" width="20" height="20" />MongoDB</li></ul></div><div class="rounded-lg border border-accent/30 bg-surface p-5 shadow-md "><h3 class="mb-4 text-lg font-semibold text-accent">Tools</h3>
+               <ul class="space-y-2"><li class="flex items-center"><img src="/assets/images/skills/git.svg" class="mr-2 h-5 w-5" alt="" width="20" height="20" />Git</li><li class="flex items-center"><img src="/assets/images/skills/github.svg" class="mr-2 h-5 w-5" alt="" width="20" height="20" />GitHub</li><li class="flex items-center"><img src="/assets/images/skills/visualstudiocode.svg" class="mr-2 h-5 w-5" alt="" width="20" height="20" />VS Code</li></ul></div><div class="rounded-lg border border-accent/30 bg-surface p-5 shadow-md "><h3 class="mb-4 text-lg font-semibold text-accent">Problem solving</h3>
+               <ul class="space-y-2"><li class="flex items-center"><span class="mr-2 text-accent" aria-hidden="true">▹</span>Data structures</li><li class="flex items-center"><span class="mr-2 text-accent" aria-hidden="true">▹</span>Algorithms</li><li class="flex items-center"><span class="mr-2 text-accent" aria-hidden="true">▹</span>Competitive programming</li></ul></div><div class="rounded-lg border border-accent/30 bg-surface p-5 shadow-md "><h3 class="mb-4 text-lg font-semibold text-accent">Human languages</h3>
+               <ul class="space-y-2"><li class="flex items-center"><span class="mr-2 text-accent" aria-hidden="true">▹</span>English</li><li class="flex items-center"><span class="mr-2 text-accent" aria-hidden="true">▹</span>Hindi</li><li class="flex items-center"><span class="mr-2 text-accent" aria-hidden="true">▹</span>Bangla</li></ul></div></div>
       </section>
     </main>
-
-    <footer
-      class="mt-auto flex w-full flex-col items-center justify-center gap-y-2 pt-20 pb-4 text-center align-top font-semibold sm:flex-row sm:justify-between sm:text-xs text-gray-400"
-    >
-      <div class="mr-0 sm:mr-4">
-        © Sobhan Mridha 2025.<span class="inline-block">&nbsp;💀&nbsp;</span>
-      </div>
-      <nav class="flex gap-x-2 sm:gap-x-0 sm:divide-x sm:divide-gray-500">
-        <a
-          class="px-3 py-2 hover:underline sm:py-0 hover:text-gray-200"
-          href="/about/"
-        >
-          About me
-        </a>
-        <a
-          class="px-3 py-2 hover:underline sm:py-0 hover:text-gray-200"
-          href="/skills/"
-        >
-          Skills
-        </a>
-        <a
-          class="px-3 py-2 hover:underline sm:py-0 hover:text-gray-200"
-          href="/projects/"
-        >
-          Porjects
-        </a>
-        <a
-          class="px-3 py-2 hover:underline sm:py-0 hover:text-gray-200"
-          href="/contact/"
-        >
-          Contact
-        </a>
-      </nav>
-    </footer>
-
-    <script>
-      const toggleBtn = document.getElementById("menu-toggle");
-      const menu = document.getElementById("navigation-menu");
-
-      toggleBtn.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
-      });
-    </script>
+    <footer class="mt-auto flex w-full flex-col items-center justify-center gap-y-2 pb-4 pt-20 text-center font-semibold text-gray-400 sm:flex-row sm:justify-between sm:text-xs">
+    <div>© MD Sobhan Mridha 2026</div>
+    <nav aria-label="Footer" class="flex flex-wrap justify-center gap-x-2 sm:gap-x-0 sm:divide-x sm:divide-gray-500"><a class="px-3 py-2 hover:text-gray-200 hover:underline sm:py-0" href="/about/">About</a><a class="px-3 py-2 hover:text-gray-200 hover:underline sm:py-0" href="/skills/">Skills</a><a class="px-3 py-2 hover:text-gray-200 hover:underline sm:py-0" href="/projects/">Projects</a><a class="px-3 py-2 hover:text-gray-200 hover:underline sm:py-0" href="/achievements/">Achievements</a><a class="px-3 py-2 hover:text-gray-200 hover:underline sm:py-0" href="/contact/">Contact</a></nav>
+  </footer>
   </body>
 </html>
